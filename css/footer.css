@@ -1,1 +1,99 @@
+/* Reset Style */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* Global Style */
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.container{
+    width:80%;
+    margin: 0% auto;
+    padding-bottom: 10%;
+   
+}
+.txt-dec{
+    text-decoration: none
+}
+.list-sty{
+    list-style: none;
+}
+.white{
+    color:white;
+}
+.jus-cont-evenly{
+    justify-content: space-evenly;
+}
+.d-line{
+    display:inline-block;
+}
+.text-cen{
+    text-align: center;
+}
+
+.margin-top-bottom{
+    margin:1% 0%;
+}
+.margin-top-bottom2{
+    margin:6% 0%;
+}
+.grey{
+    color:rgb(42, 41, 41);
+    font-weight: 400;
+}
+.marg-left-right{
+    margin:0% 2%;
+}
+
+/* Custom Style */
+.bg{
+   background-color: teal;
+   padding-top: 5%;
+   
+    height:100%;
+}
+.btn-sub{
+    background-color:rgb(38, 160, 160) ;
+    transition:0.3s;
+ font-weight: 500;
+   
+  padding:4% 7%;
+  
+    border:0;
+}
+.btn-sub:hover{
+    background-color: black;
+}
+.email{
+     padding:4% 7%;
+     outline:0;
+     color:white;
+     background-color:rgb(21, 104, 104);
+     border:0;
+}
+.email::placeholder{
+    color:white;
+}
+.wid{
+    width:30%;
+}
+.email:hover{
+    background-color: black;
+}
+.bg-teal{
+     background-color:rgb(21, 104, 104);
+      padding: 2% 0%;
+      /* margin-bottom: 3%; */
+}
 
