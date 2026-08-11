@@ -1,0 +1,56 @@
+/* Nav-bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+@media (max-width: 992px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-sub{
+    display: inline-block;
+        margin-top: 5%;
+    }
+    .container{
+        text-align: center;
+    }
+    .wid{
+        text-align: center;
+        width:80%;
+    }
+   
+
+}
+@media (max-width:576px) {
+   
+    .btn-sub{
+    display: inline-block;
+        margin-top: 5%;
+        padding:2% 2%;
+    }
+    .container{
+        text-align: center;
+    }
+    .wid{
+        text-align: center;
+    }
+    .email{
+        padding: 2% 2%;
+    }
+    
+}
