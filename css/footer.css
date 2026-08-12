@@ -12,12 +12,12 @@
 
 
 /* Global Style */
-.d-flex{
+.flex{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
-.container{
+.foot-container{
     width:80%;
     margin: 0% auto;
     padding-bottom: 10%;
