@@ -1,3 +1,4 @@
+<!---book-a-table page-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,16 +6,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book a Table - Hotel Booking Sea Resort</title>
   
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <!-- Navbar & Footer CSS -->
+  <link rel="stylesheet" href="css/nav-bar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/media-nav-foot.css">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ==================== NAVBAR PLACEHOLDER (مكان الناڤبار) ==================== -->
+  <!-- NAVBAR SECTION -->
+  <nav class="bg-nav">
+    <div class="container d-flex jus-cont-between">
+      <div>
+        <img src="images/ChatGPT Image Aug 10, 2026, 01_06_08 AM.png" alt="Hotel Logo" height="100%">
+      </div>
+      <div class="nav-linkat">
+        <ul>
+          <li class="in-b"><a href="index.html" class="white text-dec">Home</a></li>
+          
+          <li class="in-b dropdown marg-left-rig link"><a href="" class="white text-dec">Rooms</a>
+            <ul class="dp-content">
+              <li class="padd">
+                <a href="booking-search.html" class="text-black text-dec">Search Page</a>
+                <button class="hot"><a href="" class="text-dec white">Hot</a></button>
+              </li>
+              <hr>
+              <li class="padd"><a href="" class="text-black text-dec">Single Room</a></li>
+              <hr>
+              <li class="padd"><a href="book-a-table.html" class="text-black text-dec">Hotel Restaurant</a></li>
+              <hr>
+              <li class="padd roomrates"><a href="" class="text-black text-dec">Room Rates</a>
+                <ul class="dp-content-ar margin-auto">
+                  <li class="padd">
+                    <a href="" class="text-black text-dec">Rate 1</a>
+                    <button class="best"><a href="" class="text-dec white">Best</a></button>
+                  </li>
+                  <hr>
+                  <li class="padd"><a href="" class="text-black text-dec">Rate 2</a></li>
+                </ul>
+              </li>
+              <hr>
+              <li class="padd"><a href="single-branch.html" class="text-black text-dec">Single Branch</a></li>
+            </ul>
+          </li>
+
+          <li class="in-b dropdown link"><a href="about-us.html" class="white text-dec">About Us</a>
+            <ul class="dp-content">
+              <li class="padd"><a href="" class="text-black text-dec">About Us</a></li>
+              <hr>
+              <li class="padd">
+                <a href="gallery.html" class="text-black text-dec">Gallery</a> 
+                <button class="hot"><a href="" class="text-dec white">New</a></button>
+              </li>
+              <hr>
+              <li class="padd"><a href="services.html" class="text-black text-dec">Services</a></li>
+            </ul>
+          </li>
+
+          <li class="in-b dropdown marg-left-rig link"><a href="" class="white text-dec">Shop</a>
+            <ul class="dp-content">
+              <li class="padd">
+                <a href="" class="text-black text-dec">Shop 1</a>
+                <button class="best"><a href="" class="text-dec white">Best</a></button>
+              </li>
+              <hr>
+              <li class="padd"><a href="" class="text-black text-dec">Shop 2</a></li>
+              <hr>
+              <li class="padd"><a href="single-product.html" class="text-black text-dec">Single Product</a></li>
+            </ul>
+          </li>
+
+          <li class="in-b dropdown link"><a href="" class="white text-dec">News</a>
+            <ul class="dp-content margin-auto">
+              <li class="padd arch"><a href="" class="text-black text-dec">Archive</a>
+                <ul class="dp-content-ar margin-auto">
+                  <li class="padd">
+                    <a href="archieve.html" class="text-black text-dec">Archive</a>
+                    <button class="best"><a href="" class="text-dec white">Best</a></button>
+                  </li>
+                  <hr>
+                  <li class="padd"><a href="" class="text-black text-dec">Archive Left</a></li>
+                  <hr>
+                  <li class="padd"><a href="" class="text-black text-dec">Archive Right</a></li>
+                </ul>
+              </li>
+              <hr>
+              <li class="padd post"><a href="" class="text-black text-dec">Single Post</a>
+                <ul class="dp-content-ar margin-auto">
+                  <li class="padd">
+                    <a href="right-sidebar.html" class="text-black text-dec">Right Side Bar</a>
+                    <button class="hot"><a href="" class="text-dec white">Hot</a></button>
+                  </li>
+                  <hr>
+                  <li class="padd"><a href="full-width.html" class="text-black text-dec">Full Width</a></li>
+                  <hr>
+                  <li class="padd"><a href="" class="text-black text-dec">Left Side Bar</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="in-b marg-left-rig"><a href="contact.html" class="white text-dec">Contact</a></li>
+          <button class="btn align-item"><b>Book Now</b></button>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Hero Header Banner -->
   <header class="hero-search d-flex align-items-center justify-content-center text-center text-white">
@@ -142,12 +251,12 @@
         </div>
 
       </div>
-
-      <!-- Time Slots Grid -->
+<!-- Time Slots Grid -->
       <div class="text-center mt-5">
         <h6 class="text-uppercase tracking-wider text-muted mb-4 fs-7">TIME :</h6>
         
-        <div class="d-flex flex-wrap justify-content-center gap-2 max-w-800 mx-auto">
+ 
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mx-auto" style="max-width: 850px;">
           <button class="btn time-slot-btn navy-slot">9:00 am</button>
           <button class="btn time-slot-btn">9:30 am</button>
           <button class="btn time-slot-btn">10:00 am</button>
@@ -333,12 +442,56 @@
     </div>
   </section>
 
-  <!-- ==================== FOOTER PLACEHOLDER (مكان الفوتر) ==================== -->
+  <!-- FOOTER SECTION -->
+  <footer class="bg">
+    <div class="foot-container flex">
+      <div class="wid">
+        <h3 class="white text-cen margin-top-bottom">Phone Support</h3>
+        <h6 class="grey text-cen">24 HOUR A DAY</h6>
+        <h3 class="white text-cen margin-top-bottom2">+ 01 345 647 745</h3>
+      </div>
+
+      <div class="wid">
+        <h3 class="white text-cen margin-top-bottom">Connect With Us</h3>
+        <h6 class="grey text-cen">SOCIAL MEDIA CHANNELS</h6>
+        <div class="text-cen margin-top-bottom2">
+          <i class="fa-brands fa-instagram white marg-left-right"></i>
+          <i class="fa-brands fa-twitter white"></i>
+          <i class="fa-brands fa-facebook white marg-left-right"></i>
+          <i class="fa-brands fa-pinterest white"></i>
+          <i class="fa-brands fa-youtube white marg-left-right"></i>
+        </div>
+      </div>
+
+     
+      <div class="wid">
+        <h3 class="white text-cen margin-top-bottom">Newsletter</h3>
+        <h6 class="grey text-cen">SIGN UP FOR SPECIAL OFFERS</h6>
+        <form class="margin-top-bottom2 d-flex justify-content-center align-items-center">
+          <input type="email" placeholder="Insert your email" class="email w-auto" style="max-width: 170px;">
+          <button class="btn-sub white text-cen text-nowrap"><b>SUBSCRIBE</b></button>
+        </form>
+      </div>
+    </div>
+
+ 
+    <div class="flex jus-cont-evenly bg-teal py-3">
+      <ul class="wid flex list-sty gap-3 justify-content-center m-0 p-0">
+        <li><a href="gallery.html" class="white txt-dec me-3">Home</a></li>
+        <li><a href="gallery.html" class="white txt-dec me-3">Service</a></li>
+        <li><a href="gallery.html" class="white txt-dec me-3">About</a></li>
+        <li><a href="gallery.html" class="white txt-dec me-3">Booking</a></li>
+        <li><a href="gallery.html" class="white txt-dec me-3">Contact</a></li>
+      </ul>
+      <div class="wid"></div>
+    </div>
+  </footer>
 
   <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   
   <!-- Custom JS-->
+  <script src="javascript/footer.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
