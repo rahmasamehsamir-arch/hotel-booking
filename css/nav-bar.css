@@ -1,0 +1,156 @@
+/* Reset Style */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+     font-size: 14px;
+}
+
+    
+
+
+/* Global Style */
+.container{
+    width:90%;
+    margin: 0% auto;
+   
+}
+
+.padd{
+    padding:7% 10%;
+
+}
+.d-flex{
+    display: flex;
+}
+.align-item{
+    align-items: center;
+}
+.txt-center{
+    text-align: center;
+}
+
+.in-b{
+    display: inline-block;
+}
+.text-black{
+    color: rgba(0, 0, 0, 0.651);
+}
+.dropdown{
+    position: relative;
+}
+.jus-cont-between{
+    justify-content: space-between;
+}
+
+
+
+.white{
+    color: white;
+}
+
+
+.marg-left-rig{
+    margin: 0% 8%;
+}
+.text-dec{
+   text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom Style */
+
+.dropdown:hover .dp-content{
+    display:block;
+}
+.nav-linkat{
+    padding:3%;
+    width:80%;
+}
+
+.dp-content li:hover {
+  background-color: #f1f1f1;
+}
+.bg-nav{
+
+background-color: teal;
+ animation: navSlide 1s ease-out;
+
+}
+@keyframes navSlide {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+.btn{
+    background-color:rgb(38, 160, 160) ;
+    color:white;
+    transition:0.3s;
+ font-weight: 500;
+   
+  padding:1%;
+    margin:auto;
+    border:0;
+}
+.btn:hover{
+    background-color: black;
+}
+.dp-content{
+    display: none;
+    position: absolute;
+   top:100%;
+    right:-160%;
+      background-color: white;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  list-style: none;
+
+}
+.dp-content-ar{
+    display: none;
+    position: absolute;
+   left:100%;
+      background-color: white;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  list-style: none;
+
+}
+.roomrates:hover .dp-content-ar{
+    display: block;
+}
+.arch:hover .dp-content-ar{
+    display: block;
+}
+.post:hover .dp-content-ar{
+    display: block;
+}
+.hot{
+    background-color: navy;
+    padding-left:5px;  padding-right:5px;
+    border:0;
+    margin-left: 7%;
+    text-align: right;
+}
+.best{
+       background-color: rgb(0, 0, 0);
+    padding-left:5px;  padding-right:5px;
+    border:0;
+    margin-left: 7%;
+    text-align: right;
+}
