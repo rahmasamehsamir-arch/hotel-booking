@@ -16,7 +16,9 @@
     margin: 0% auto;
    
 }
-
+.marg-cen{
+    margin: 0% auto;
+}
 .padd{
     padding:7% 10%;
 
@@ -86,6 +88,8 @@
 
 background-color: teal;
  animation: navSlide 1s ease-out;
+    position: relative;
+    z-index: 1000;
 
 }
 @keyframes navSlide {
@@ -119,6 +123,7 @@ background-color: teal;
   min-width: 170px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   list-style: none;
+     z-index: 2000;
 
 }
 .dp-content-ar{
