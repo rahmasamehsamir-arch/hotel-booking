@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --navy-dark: #002347;
+  --navy-main: #003b73;
+  --blue-bright: #00a8ff;
+  --text-gray: #666666;
+  --border-color: #e5e5e5;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  color: #444;
+  background-color: #ffffff;
+}
+
+/* Hero Header */
+.hero-search {
+  background: linear-gradient(rgba(0, 35, 71, 0.45), rgba(0, 35, 71, 0.45)),
+              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  height: 380px;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+/* Booking Steps Bar */
+.steps-bar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.step-item.active {
+  color: #fff;
+}
+
+.step-number {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.step-item.active .step-number {
+  background: var(--navy-main);
+  color: #fff;
+}
+
+/* Filter Strip Below Banner */
+.filter-strip {
+  background-color: var(--navy-dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* Sidebar Custom Styling */
+.search-box-navy {
+  background-color: var(--navy-main);
+  color: #fff;
+  padding: 25px 20px;
+}
+
+.sidebar-branch-select {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar-branch-select option {
+  color: #333;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.stat-label {
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.stat-value {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #00d2ff;
+  line-height: 1;
+}
+
+.stat-unit {
+  font-size: 0.65rem;
+  color: #00d2ff;
+  vertical-align: super;
+}
+
+/* Room Cards */
+.room-card-item {
+  border: 1px solid var(--border-color);
+  background: #fff;
+  position: relative;
+}
+
+.card-img-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ribbon-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff2a2a;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.ribbon-tag.black-tag {
+  background: #222;
+}
+
+.ribbon-tag.blue-tag {
+  background: var(--navy-main);
+}
+
+.ribbon-tag.sky-tag {
+  background: var(--blue-bright);
+}
+
+.hotel-name-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 35, 71, 0.75);
+  color: #fff;
+  padding: 6px 15px;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+/* Card Content */
+.room-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #222;
+}
+
+.room-specs {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.room-desc {
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Buttons inside Card */
+.btn-book-card {
+  border: 1px solid var(--navy-main);
+  color: var(--navy-main);
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 8px;
+  flex-grow: 1;
+  border-radius: 0;
+}
+
+.btn-book-card.sky-active {
+  border-color: var(--blue-bright);
+  background: #e6f7ff;
+  color: var(--blue-bright);
+}
+
+.btn-info-square {
+  background: var(--navy-main);
+  color: #fff;
+  border: none;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+
+.btn-info-square.sky-bg {
+  background: var(--blue-bright);
+}
+
+.card-bottom-bar {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.link-full-info {
+  font-size: 0.7rem;
+  color: #aaa;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Pagination */
+.page-btn {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy-dark);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.page-btn.active {
+  background: var(--blue-bright);
+}
+
+/* Custom Table Booking Steps */
+.step-item.browse-active .step-number {
+  background: var(--blue-bright) !important;
+  color: #fff;
+}
+
+/* Garden Terrace Box */
+.terrace-card-box {
+  position: relative;
+  height: 380px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+  color: #fff;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.terrace-select-title {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+}
+
+.terrace-select-title option {
+  color: #333;
+}
+
+.guest-counter-val {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.counter-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+/* Legend Box */
+.calendar-legend-item {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-square {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+/* Navy Calendar Card */
+.calendar-navy-card {
+  background-color: var(--navy-dark);
+  color: #fff;
+  padding: 30px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calendar-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 4px;
+}
+
+.calendar-table th {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 10px;
+}
+
+.calendar-table td {
+  font-size: 0.85rem;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.calendar-table td.active-day {
+  background-color: var(--blue-bright);
+  color: #fff;
+  font-weight: 700;
+}
+
+.calendar-table td.disabled-day {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Time Picker Slots */
+.time-slot-btn {
+  background-color: var(--blue-bright);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 0;
+  transition: all 0.2s ease;
+}
+
+.time-slot-btn.navy-slot {
+  background-color: var(--navy-main);
+}
+
+.time-slot-btn:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* Counter Statistics Bar */
+.counter-stats-bar {
+  background: linear-gradient(rgba(0, 35, 71, 0.65), rgba(0, 35, 71, 0.65)),
+              url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1500&q=80') center/cover fixed no-repeat;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.stat-big-num {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+/* Mini Promo List */
+.promo-item-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  padding: 10px;
+}
+
+.promo-thumb-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.badge-promo-tag {
+  background-color: var(--navy-main);
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  letter-spacing: 1px;
+}
+
+.badge-sale-tag {
+  background-color: #222;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  letter-spacing: 1px;
+}
+
+/* CTA Banner Ribbon */
+.cta-banner-ribbon {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  padding: 35px 0;
+  color: #fff;
+}
+
+.btn-cta-navy {
+  background-color: var(--navy-dark);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 12px 28px;
+  border-radius: 0;
+  border: none;
+}
+
+/*------Branch Page (Hotel London) -----------*/
+
+/* Hero Banner */
+.hero-branch {
+  height: 45vh;
+  min-height: 320px;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+              url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+
+/* Drop Cap Style for About Paragraph */
+.drop-cap::first-letter {
+  font-size: 4rem;
+  float: left;
+  line-height: 0.8;
+  padding-right: 15px;
+  font-weight: 300;
+  color: #333;
+}
+
+/* Dark Contact Info Card */
+.dark-info-card {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 35px;
+}
+
+.dark-info-card .info-title {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #888;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.dark-info-card .info-val {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+/* Stars Divider */
+.star-rating-divider {
+  color: #aaa;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+}
+
+/* Room Cards Formatting */
+.room-card-box {
+  background: #fff;
+  border: 1px solid #eee;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.room-card-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.room-img-wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.room-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.room-img-overlay {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  color: #fff;
+  font-size: 0.75rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+}
+
+/* Room Booking Buttons */
+.btn-room-cyan {
+  border: 1px solid #00a8e8;
+  color: #00a8e8;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 18px;
+  border-radius: 0;
+  width: 100%;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.btn-room-cyan:hover {
+  background-color: #00a8e8;
+  color: #fff;
+}
+
+.btn-room-navy {
+  border: 1px solid #0a2540;
+  color: #0a2540;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 18px;
+  border-radius: 0;
+  width: 100%;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.btn-room-navy:hover {
+  background-color: #0a2540;
+  color: #fff;
+}
+
+/* Footer info inside Room Card */
+.room-card-footer {
+  border-top: 1px solid #f0f0f0;
+  padding: 12px 20px;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.full-info-link {
+  color: #aaa;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.full-info-link:hover {
+  color: #00a8e8;
+}
+
+/* Single Branch Page Styles */
+
+/* Hero Banner */
+.hero-banner {
+  height: 380px;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+              url('https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+}
+
+.hero-title {
+  font-weight: 300;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+}
+
+
+.drop-cap-text::first-letter {
+  font-size: 4.2rem;
+  float: left;
+  line-height: 0.75;
+  padding-right: 12px;
+  font-weight: 300;
+  color: #444;
+}
+
+/* Dark Contact Card */
+.dark-contact-card {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 35px 30px;
+}
+
+.card-info-title {
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.card-info-val {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Stars Divider & Section Title */
+.stars-divider {
+  color: #aaa;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+}
+
+/* Room Cards */
+.room-card {
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+
+.room-img-container {
+  position: relative;
+  height: 220px;
+}
+
+.room-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.room-overlay-title {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  color: #fff;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.btn-room-blue {
+  border: 1px solid #00a8e8;
+  color: #00a8e8;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 0;
+  padding: 10px;
+  background: transparent;
+}
+
+.btn-room-blue:hover {
+  background-color: #00a8e8;
+  color: #fff;
+}
+
+.btn-room-navy {
+  border: 1px solid #032040;
+  color: #032040;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 0;
+  padding: 10px;
+  background: transparent;
+}
+
+.btn-room-navy:hover {
+  background-color: #032040;
+  color: #fff;
+}
+
+/* Footer info inside Room Card */
+.room-footer {
+  border-top: 1px solid #f0f0f0;
+  padding: 12px 18px;
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.stars {
+  color: #ffffff;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+}
+
+.btn-navy-icon {
+  background: #002347 !important;
+  color: #ffffff !important;
+  border-radius: 0 !important;
+  border: 1px solid #002347 !important;
+  padding: 0 14px !important;
+}
+
+.btn-sky-icon {
+  background: #00a8ff !important;
+  color: #ffffff !important;
+  border-radius: 0 !important;
+  border: 1px solid #00a8ff !important;
+  padding: 0 14px !important;
+}
+
+.btn-book-sky {
+  border: 1px solid #00a8ff !important;
+  color: #00a8ff !important;
+  background: #e6f7ff !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  border-radius: 0 !important;
+  padding: 10px !important;
+}
+
+.btn-book-navy {
+  border: 1px solid #002347 !important;
+  color: #002347 !important;
+  background: transparent !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  border-radius: 0 !important;
+  padding: 10px !important;
+}
+
+.full-info-link {
+  font-size: 0.65rem !important;
+  color: #888888 !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.full-info-link:hover {
+  color: #000000 !important;
+}
