@@ -1,1 +1,418 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+     font-size: 14px;
+}
+
+
+
+
+body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    
+}
+
+button {
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* 2. GLOBAL STYLES */
+:root {
+    --primary-blue: #00bfff;
+    --dark-blue: #0a3d62;
+    --navy-blue: #0c2461;
+    --text-dark: #2c3e50;
+    --text-muted: #7f8c8d;
+    --bg-light: #f8f9fa;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-dark);
+    background-color: #fff;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-tag {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-title {
+    font-family: var(--font-serif);
+    font-size: 44px;
+    color: #1a1a1a;
+    font-weight: 400;
+    margin: 10px 0 20px;
+}
+
+/* CUSTOM STYLES */
+
+.hero-section {
+    background-image: url(../images/hotel-1.jpg ) ;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 10% 0;
+    color: #fff;
+    position: relative;
+}
+
+.hero-subtitle {
+padding-top: 2% ;   
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.hero-title {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-desc {
+    max-width: 500px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.room-preview-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+    color: var(--text-dark);
+    padding: 10px 20px 10px 10px;
+    border-radius: 40px;
+    margin-top: 30px;
+}
+
+.badge-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.badge-info h4 { font-size: 16px; }
+.badge-info span { font-size: 12px; color: var(--text-muted); }
+
+/* Booking Bar */
+.booking-bar {
+    display: flex;
+    background: #fff;
+    color: var(--text-dark);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transform: translateY(50%);
+}
+
+.booking-item {
+    flex: 1;
+    padding: 20px 30px;
+    border-right: 1px solid #eee;
+}
+
+.booking-item .label {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.value-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.value-wrapper .day {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: #fff;
+    font-weight: 600;
+    padding: 0 40px;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0099cc;
+}
+
+/* Relax Section */
+.relax-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    padding: 150px 20px 80px;
+}
+
+.relax-image-wrapper {
+    position: relative;
+}
+
+.badge-dark-blue {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background: var(--navy-blue);
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+.badge-dark-blue h3 { font-size: 35px; }
+.badge-dark-blue p { font-size: 10px; letter-spacing: 1px; }
+
+.text-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.author-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.signature {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 32px;
+    margin-left: auto;
+    color: #444;
+}
+
+/* Position Section */
+.position-section {
+    background: url('living-room.jpg') center/cover;
+    position: relative;
+    padding: 100px 0;
+    margin: 50px 0;
+}
+
+.position-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.position-text {
+    max-width: 450px;
+}
+
+.payment-options {
+    margin-top: 30px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 28px;
+    margin-top: 10px;
+    color: var(--navy-blue);
+}
+
+.offer-circle {
+    background: var(--navy-blue);
+    color: #fff;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.offer-circle h2 { font-size: 55px; line-height: 1; }
+
+.towels-img {
+    width: 300px;
+}
+
+/* Structure Section */
+.structure-section {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    padding: 80px 20px;
+}
+
+.structure-gallery {
+    display: flex;
+    gap: 15px;
+}
+
+.gallery-stats {
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-item h3 { font-size: 24px; }
+.stat-item p { font-size: 10px; color: var(--text-muted); }
+
+.progress-bars {
+    margin-top: 30px;
+}
+
+.progress-item {
+    background: #e9ecef;
+    height: 35px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.progress-fill.dark-blue { background-color: var(--navy-blue); }
+.progress-fill.cyan { background-color: #00a8ff; }
+.progress-fill.light-blue { background-color: var(--primary-blue); }
+
+/* Amenities Section */
+.amenities-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px 20px 80px;
+    text-align: left;
+}
+
+.amenity-card i {
+    font-size: 40px;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.amenity-card h3 { font-size: 16px; margin-bottom: 5px; }
+.amenity-card p { font-size: 13px; color: var(--text-muted); }
+
+/* Rooms Grid Section */
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-bottom: 80px;
+}
+
+.room-card {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+}
+
+.room-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price-tag {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.price-tag.dark-blue { background-color: var(--navy-blue); }
+.price-tag.light-blue { background-color: var(--primary-blue); }
+
+.room-details {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.room-details h3 { font-size: 21px; margin-bottom: 5px; }
+
+.room-specs {
+    display: flex;
+    gap: 15px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* Floating Action Badge */
+.floating-price-badge {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-blue);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.badge-label { font-size: 8px; letter-spacing: 1px; }
+.badge-price { font-size: 16px; font-weight: bold; }
 
