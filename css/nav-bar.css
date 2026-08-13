@@ -3,8 +3,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-     font-family: "Roboto", sans-serif;
-     font-size: 14px;
+  
 }
 
     
@@ -147,13 +146,6 @@ background-color: teal;
 }
 .hot{
     background-color: navy;
-    padding-left:5px;  padding-right:5px;
-    border:0;
-    margin-left: 7%;
-    text-align: right;
-}
-.best{
-       background-color: rgb(0, 0, 0);
     padding-left:5px;  padding-right:5px;
     border:0;
     margin-left: 7%;
