@@ -513,3 +513,21 @@ html, body{
 .fs-a-section-3-7 {
   font-size: 13px;
 }
+
+form.margin-top-bottom2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form.margin-top-bottom2 .email {
+    width: 55%;
+}
+
+form.margin-top-bottom2 .btn-sub {
+    width: 45%;
+}
+
+form.margin-top-bottom2 #msg1,
+form.margin-top-bottom2 #msg2 {
+    width: 100%;
+}
