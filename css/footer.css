@@ -96,4 +96,21 @@
       padding: 2% 0%;
       /* margin-bottom: 3%; */
 }
+#msg1,
+#msg2 {
+    display:none;
+    background-color: #d84b4b;
+    color: white;
+    padding: 5% 11px;
+    font-size: 15px;
+    margin-top: 20px;
 
+}
+
+#msg1 {
+    width: 100%;
+}
+
+#msg2 {
+    width: 100%;
+}
