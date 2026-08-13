@@ -132,7 +132,7 @@ var products = {
 
         name: "Chalet",
         price: "$30.50",
-        image: "images/square-03.jpg"
+        image: "../images/square-03.jpg"
 
     },
 
@@ -140,7 +140,7 @@ var products = {
 
         name: "Double Room",
         price: "$28.90",
-        image: "images/square-05.jpg"
+        image: "../images/square-05.jpg"
 
     },
 
@@ -148,7 +148,7 @@ var products = {
 
         name: "Family Room",
         price: "$34.80",
-        image: "images/square-07.jpg"
+        image: "../images/square-07.jpg"
 
     },
 
@@ -156,7 +156,7 @@ var products = {
 
         name: "Garden Room",
         price: "$45.60",
-        image: "images/square-02.jpg"
+        image: "../images/square-02.jpg"
 
     },
 
@@ -164,7 +164,7 @@ var products = {
 
         name: "Lake View",
         price: "$15.50",
-        image: "images/square-05.jpg"
+        image: "../images/square-05.jpg"
 
     },
 
@@ -172,7 +172,7 @@ var products = {
 
         name: "Mini Apt.",
         price: "$45.70",
-        image: "images/square-08.jpg"
+        image: "../images/square-08.jpg"
 
     },
 
@@ -180,7 +180,7 @@ var products = {
 
         name: "Sea Room",
         price: "$37.20",
-        image: "images/square-01.jpg"
+        image: "../images/square-01.jpg"
 
     },
 
@@ -188,7 +188,7 @@ var products = {
 
         name: "VIP Suite",
         price: "$26.80",
-        image: "images/square-04.jpg"
+        image: "../images/square-04.jpg"
 
     }
 
