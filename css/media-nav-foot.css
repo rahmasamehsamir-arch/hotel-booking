@@ -2,6 +2,9 @@
 
 @media (max-width: 992px) {
 
+    .nav{
+        text-align: center;
+    }
   .d-flex{
     flex-direction: column;
   }
@@ -28,6 +31,7 @@
 nav{
     margin:0;
     padding:0;
+    text-align: center;
 }
     .d-flex{
    flex-direction: column;
@@ -110,3 +114,4 @@ nav{
     }
     
 }
+
