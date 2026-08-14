@@ -114,3 +114,14 @@
 #msg2 {
     width: 100%;
 }
+ .email {
+    display: inline-block !important;
+    width: 55% !important;
+    vertical-align: middle;
+}
+
+ .btn-sub {
+    display: inline-block !important;
+    width: 40% !important;
+    vertical-align: middle;
+}
