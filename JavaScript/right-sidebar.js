@@ -1,7 +1,8 @@
 // Array of image URLs for the slider
 const images = [
-  "images/g.jpg",
-  "images/h.jpg"
+    "images/f.jpg",
+  "../images/g.jpg",
+  "../images/h.jpg"
 ];
 
 let currentIndex = 0;
