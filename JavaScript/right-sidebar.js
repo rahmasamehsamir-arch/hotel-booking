@@ -1,15 +1,15 @@
 // Array of image URLs for the slider
-const images = [
+var images = [
     "images/f.jpg",
-  "../images/g.jpg",
+  "images/g.jpg",
   "../images/h.jpg"
 ];
 
-let currentIndex = 0;
+var currentIndex = 0;
 
-const sliderImg = document.getElementById("slider-img");
-const prevBtn = document.getElementById("prev-btn");
-const nextBtn = document.getElementById("next-btn");
+var sliderImg = document.getElementById("slider-img");
+var prevBtn = document.getElementById("prev-btn");
+var nextBtn = document.getElementById("next-btn");
 
 // Previous button 
 
