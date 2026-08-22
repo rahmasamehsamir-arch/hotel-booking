@@ -1,6 +1,6 @@
 var images = [
- "images/f.jpg"
-  "images/g.jpg"
+ "images/f.jpg",
+  "images/g.jpg",
 "images/h.jpg"
 ];
 
