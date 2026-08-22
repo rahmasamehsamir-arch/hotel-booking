@@ -1,6 +1,6 @@
 // Array of image URLs for the slider
 var images = [
-    "images/f.jpg",
+  "images/f.jpg",
   "images/g.jpg",
   "images/h.jpg"
 ];
