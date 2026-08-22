@@ -1,8 +1,8 @@
 // Array of image URLs for the slider
 var images = [
   "images/f.jpg",
-  "images/g.jpg",
-  "images/h.jpg"
+  "../images/g.jpg",
+  "../images/h.jpg"
 ];
 
 var currentIndex = 0;
