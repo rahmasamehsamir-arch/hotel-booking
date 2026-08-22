@@ -1,7 +1,7 @@
 var images = [
-  "images/f.jpg",
-  "images/g.jpg",
-  "images/h.jpg"
+  "images/beach.jpg",
+  "images/beach.jpg",
+  "images/beach.jpg"
 ];
 
 var currentIndex = 0;
